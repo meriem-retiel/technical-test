@@ -39,6 +39,8 @@ def newList(n):
 #Number of tests
 t= int(input(""))
 
+#Save results
+a=[]
 #Creatinf t tests
 for i in range(t):
 
@@ -47,8 +49,14 @@ for i in range(t):
 
     m=int(input(''));
     list2=newList(m);
+    a.append(compare_lists(list1,list2))
 
-    print(compare_lists(list1,list2))
+print('')
+#Output the results
+for i in a :
+    print(i)
+
+    
 
 
 
